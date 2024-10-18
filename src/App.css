@@ -1,38 +1,360 @@
-.App {
-  text-align: center;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-page{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('https://i.pinimg.com/736x/87/17/4e/87174eed9d4bdbacb8b21eefefd5c931.jpg');
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.main-page-btn{
+  background-color: gray;
+  cursor: pointer;
+  width: 15vw;
+  height: 8vh;
+  border: white;
+  border-radius: 10px;
+  margin-left: 85px;
+}
+.main-page-btn-p{
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+.main-page-btn:hover{
+  background-color: darkblue;
+  border: black;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.main-page-h{
+  color: white;
+  margin: 0;
+}
+.main-page-flex{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 5px;
+}
+.main-page-p{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-page-h1{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.header-page-h1:hover{
+  color: white;
+}
+.header-page-boss-h1{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.posts-projects-get{
+  margin-left: 280px;
+}
+.header-page{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 22vw;
+  height: 100vh;
+  background-color: rgb(79, 75, 75);
+}
+.header-page-btn-p{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.header-page-btn{
+  background-color: gray;
+  cursor: pointer;
+  width: 9vw;
+  height: 8vh;
+  border: white;
+  border-radius: 10px;
+  margin-left: 85px;
+  margin-top: 20px;
+}
+.header-page-btn:hover{
+  background-color: black;
+  border: white;
+}
+.header-page-btn-p:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home-page{
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  background-image: url('https://i.pinimg.com/736x/87/17/4e/87174eed9d4bdbacb8b21eefefd5c931.jpg');
+}
+.home-page-h1{
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.home-page-p{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-page{
+  width: 100vw;
+  height: 140vh;
+  /* background-image: url('https://i.pinimg.com/736x/87/17/4e/87174eed9d4bdbacb8b21eefefd5c931.jpg'); */
+  background-color: gray;
+}
+.about-page-h1{
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.about-image-p{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.about-page-img{
+  width: 15vw;
+  height: 15vh;
+  background-image: url('https://i.pinimg.com/736x/3e/a7/43/3ea7433e7ff51dc0e14c7a4b097665cc.jpg');
+}
+
+.experience-page-h1{
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.posts-item-container{
+  margin-left: 200px;
+  display: flex;
+}
+.posts-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 290px;
+}
+.posts-title{
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+.experience-page-modes-ul{
+  display: flex;
+  flex-direction: column;
+}
+.experience-page-p{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.skills-page{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.skills-page-h1{
+  color: black;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.skills-page-div{
+  width: 35vw;
+  height: 6vh;
+  background-color: green;
+  color: white;
+  padding-left: 10px;
+}
+.skills-page-div-2{
+  width: 5vw;
+  height: 6vh;
+  background-color: green;
+  color: white;
+  padding-left: 10px;
+  font-size: 9px;
+}
+.skills-page-boss-div{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.skills-page-btn{
+  width: 10vw;
+  height: 7vh;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+}
+.skills-page-btn:hover{
+  background-color: green;
+}
+.skills-page-boss-h1-btn{
+  display: flex;
+  gap: 600px;
+}
+
+.day-mode{
+  width: 100vw;
+  height: 130vh;
+  background-color: gray;
+}
+
+
+.experience-page{
+  width: 100vw;
+  height: 120vh;
+}
+.experience-modes-ul-li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark-mode{
+  width: 100vw;
+  height: 130vh;
+  background-color: black;
+}
+.day-mode-btn{
+  width: 10vw;
+  height: 6vh;
+  background-color: white;
+  border: black;
+  color: black;
+  border-radius: 5px;
+}
+.dark-mode-btn{
+  width: 10vw;
+  height: 6vh;
+  border-radius: 5px;
+  background-color: black;
+  border: white;
+  color: white;
+}
+.experience-modes-ul-li{
+  display: flex;
+  gap: 100px;
+}
+.cash-boss-super-btn{
+  display: flex;
+  flex-direction: column;
+  margin-left: 400px;
+}
+.cash-btn{
+  width: 17vw;
+  height: 9vh;
+  border-radius: 10px;
+  border: 1px solid darkgray;
+}
+.home-page-p{
+  margin-left: 400px;
+  width: 40vw;
+}
+
+.visible-modal{
+  width: 20vw;
+  height: 48vh;
+  display: none;
+}
+.skills-page-boss-div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 350px;
+}
+.not-visible-modal{
+  width: 20vw;
+  height: 48vh;
+  background-color: black;
+  /* display: none; */
+}
+
+.about-page-image{
+  width: 7vw;
+  height: 14vh;
+  border-radius: 350px;
+}
+.about-page-card-name{
+  width: 20vw;
+  height: 55vh;
+  border: 1.5px solid rgb(37, 36, 36);
+  display: flex;
+  flex-direction: column;
+}
+.about-page-image-2{
+  width: 10vw;
+  height: 18vh;
+  border-radius: 20px;
+}
+.about-page-card-boss{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.about-page-h1{
+  margin-left: 340px;
 }
